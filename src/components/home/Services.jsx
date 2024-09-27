@@ -60,7 +60,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="container mx-auto  py-8">
+    <div className="container mx-auto  py-8" >
       <div className="flex justify-center items-center">
         <span className="text-center bg-gradient-to-r inline-block to-[#17469e] from-[#e53e13] text-transparent bg-clip-text  text-3xl font-bold text-gradient mb-8">
           We Offer Different Services To Improve Your Health

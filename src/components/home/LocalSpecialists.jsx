@@ -3,6 +3,7 @@ import doctor from "../../assets/home/doctor.png";
 import { FaSearch } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
 import { TiDocumentText } from "react-icons/ti";
+import { Link } from "react-router-dom";
 const LocalSpecialists = () => {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-around bg-white py-12 ">
@@ -16,6 +17,8 @@ const LocalSpecialists = () => {
           Our medical clinic provides quality care for the entire family while
           maintaining a personable atmosphere best services.
         </p>
+        <Link to = "/bookappointment">
+        
         <button className="bg-gradient-to-r from-[#17469e] to-[#e53e13] text-white py-4 px-6 rounded-lg text-lg flex items-center">
           Book an Appointment
           <svg
@@ -33,6 +36,7 @@ const LocalSpecialists = () => {
             />
           </svg>
         </button>
+        </Link>
       </div>
 
       {/* Right Section: Image and Info Bubbles */}
@@ -81,7 +85,12 @@ const LocalSpecialists = () => {
             <TiDocumentText />
           </div>
           <div>
+          
+            
             <h3 className="text-gray-800 font-semibold">Book an appointment</h3>
+           
+        
+         
             <p className="text-gray-500 text-sm">Online appointment</p>
           </div>
         </div>
