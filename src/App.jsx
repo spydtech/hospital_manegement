@@ -5,9 +5,12 @@ import SignUp from "./components/pages/signUp/signUp";
 import BookAppointment from "./components/BookAppointment"
 import ReportsMasters from "./components/admin/reports&Masters/ReportsMasters";
 import Master from "./components/admin/master/Master";
-import Patient from "./components/admin/patient/Patient";
+import Patient from "./components/admin/master/patient/Patient";
+import HealthcarePractitioner from "./components/admin/master/healthcarePractitioner/HealthcarePractitioner"
+import NewPractitionerSchedule from "./components/admin/master/healthcarePractitioner/NewPractitionerSchedule"
+import EditPractitionerSchedule from "./components/admin/master/healthcarePractitioner/EditPractitionerSchedule"
 // import "./App.css";
-
+import Practitioner from "./components/admin/master/practitionerSchedule/Practitioner"
 function App() {
   return (
     <Router>
@@ -19,6 +22,12 @@ function App() {
         <Route path="/reportsmasters" element={<ReportsMasters />} />
         <Route path="/masters" element={<Master />} />
         <Route path="/patient" element={<Patient />} />
+        <Route path="/HealthcarePractitioner" element={<HealthcarePractitioner />} />
+        <Route path="/newpractitioner-schedule" element={<NewPractitionerSchedule />} />
+        <Route path="/editPractitioner-schedule" element={<EditPractitionerSchedule />} />
+        <Route path="/practitioner-schedule" element={<Practitioner />} />
+
+
       </Routes>
     </Router>
   );

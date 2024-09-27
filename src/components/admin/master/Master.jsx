@@ -6,7 +6,7 @@ const Master = () => {
   // Define button data dynamically
   const buttonData = [
     { label: 'Patient', path: '/patient' },
-    { label: 'Healthcare Practitioner', path: '/healthcare-practitioner' },
+    { label: 'Healthcare Practitioner', path: '/HealthcarePractitioner' },
     { label: 'Practitioner Schedule', path: '/practitioner-schedule' },
     { label: 'Medical Department', path: '/medical-department' },
     // Add more buttons if needed
