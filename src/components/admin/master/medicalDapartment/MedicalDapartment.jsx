@@ -153,7 +153,7 @@ const MedicalDapartment = () => {
                         setCurrentDepartment(null);
                         setIsAddModalOpen(true);
                     }}
-                    className="h-[50px] w-[250px] bg-[#17469E] text-white flex items-center justify-center rounded text-xl p-2"
+                    className="h-[50px] w-[300px] bg-[#17469E] text-white flex items-center justify-center rounded text-xl p-2"
                 >
                     <span className="text-2xl mr-3"><GrAdd /></span> Medical Department
                 </button>

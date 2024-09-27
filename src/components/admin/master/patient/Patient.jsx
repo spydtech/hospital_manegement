@@ -382,15 +382,17 @@ const Patient = () => {
       {showModal && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-75 flex justify-center items-center">
         
-          <div className="bg-[#17469E] p-6 rounded-lg shadow-lg max-w-2xl w-full">
+          <div className=" rounded-lg shadow-lg max-w-2xl w-full">
          
-            <h2 className="text-2xl text-white font-bold mb-4">
+            <h2 className="text-2xl text-white font-bold ">
               {isEditing ? 
-             <h2 className="text-[#ffff]  flex font-medium gap-4 text-3xl "> <span className=" pt-1"><RiUserReceivedFill/></span>Edit Patient</h2> : 
-             <h2 className="text-[#ffff]  flex font-medium gap-4 text-3xl "> <span className=" pt-1"><RiUserReceivedFill/></span>Add Patient</h2>}
+             <h2 className="bg-[#ffff] text-[#17469E] flex font-medium  text-xl h-[60px] pl-4 pt-4 gap-2"> <span className=" pt-1"><RiUserReceivedFill/></span>Edit Patient</h2> : 
+             <h2 className="bg-[#ffff] text-[#17469E] flex font-medium  text-xl h-[60px] pl-4 pt-4 gap-2"> <span className=" pt-1"><RiUserReceivedFill/></span>Add Patient</h2>}
             </h2>
+<div className="bg-[#17469E] p-6">
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+
+            <form onSubmit={handleSubmit} className="">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <input
@@ -499,6 +501,7 @@ const Patient = () => {
                 </button>
               </div>
             </form>
+</div>
           </div>
         </div>
       )}

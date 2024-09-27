@@ -145,7 +145,7 @@ const handleClose = () => {
       <h2 className="text-[#17469E]  flex  font-medium gap-4 text-xl mb-8 ml-4"> <span className=" pt-1"><RiUserReceivedFill/></span>Edit Appointment Type</h2>
       <button 
             onClick={handleClose}
-            className="bg-[#17469E] font-semibold text-white text-2xl mr-8 mb-4"
+            className="text-[#17469E] font-extrabold  text-2xl mr-8 mb-4"
           >
             <IoCloseSharp />
           </button>

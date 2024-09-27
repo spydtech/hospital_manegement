@@ -883,9 +883,9 @@ const PractitionerSchedule = () => {
                         setCurrentSchedule(null);
                         setIsModalOpen(true);
                     }}
-                    className="h-[50px] w-[250px] bg-[#17469E] text-white flex items-center justify-center rounded text-xl p-2"
+                    className="h-[50px] w-[350px] bg-[#17469E] text-white flex items-center justify-center rounded text-xl p-2"
                 >
-                    <span className="text-2xl mr-3"><GrAdd /></span> Practitioner Schedule
+                    <span className="text-lg mr-3"><GrAdd /></span> Practitioner Schedule
                 </button>
             </div>
 

@@ -348,14 +348,14 @@ const PatientAppointment = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-gray-600 bg-opacity-75 flex justify-center items-center">
-          <div className="bg-[#17469E] p-6 rounded-lg shadow-lg max-w-md w-full">
-            <div className="relative mb-4">
-              <h2 className="text-xl text-white font-bold">
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center ">
+          <div className=" p-6 rounded-lg shadow-lg max-w-md w-[820px] flex justify-center items-center flex-col">
+            <div className="relative h-[60px]  bg-white w-[820px]">
+              <h2 className="text-2xl text-[#17469E] font-bold  pl-4 pt-2">
                 {isEditing ? "Edit Patient" : "Add Patient"}
               </h2>
               <button
-                className="absolute top-2 right-2 text-white"
+                className="absolute top-2 right-2 text-xl font-extrabold text-[#17469E]"
                 onClick={handleCloseModal}
               >
                 X
@@ -363,7 +363,8 @@ const PatientAppointment = () => {
             </div>
 
             {/* Patient Form */}
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <div className="bg-[#17469E] w-[820px] p-8">
+            <form className="space-y-4 " onSubmit={handleSubmit}>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="date" className="block text-sm font-medium text-white">Date</label>
@@ -458,6 +459,9 @@ const PatientAppointment = () => {
                 <button type="submit" className="bg-white text-[#17469E] px-4 py-2 rounded-md">Save</button>
               </div>
             </form>
+              </div>
+
+          
           </div>
         </div>
       )}

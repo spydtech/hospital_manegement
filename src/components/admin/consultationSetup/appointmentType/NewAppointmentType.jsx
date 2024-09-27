@@ -227,7 +227,7 @@ const NewAppointmentType = () => {
           </h2>
           <button 
             onClick={handleClose}
-            className="bg-[#17469E] font-semibold text-white text-2xl mr-8 mb-4"
+            className= "text-[#17469E]   text-2xl mr-8 mb-4 font-extrabold"
           >
             <IoCloseSharp />
           </button>
