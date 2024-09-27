@@ -1,15 +1,19 @@
-// import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { MdArrowOutward } from "react-icons/md";
 import img from "../../../assets/img.png"
-const Master = () => {
+const ConsultationSetup = () => {
   // Define button data dynamically
-  const buttonData = [
-    { label: 'Patient', path: '/patient' },
-    { label: 'Healthcare Practitioner', path: '/healthcare-practitioner' },
-    { label: 'Practitioner Schedule', path: '/practitioner-schedule' },
-    { label: 'Medical Department', path: '/medical-department' },
+  const consultationSetupbuttonData = [
+    { label: 'Appointment Type', path: '/appointment-type' },
+    { label: 'Prescription Duration', path: '/prescription-duration' },
+    { label: 'Prescription Dosage', path: '/prescription-dosage' },
+    { label: 'Complaint', path: '/complaint' },
+    { label: 'Antibiotic', path: '/antibiotic' },
+    { label: 'Clinical Procedure Template ', path: '/clinical-procedure-template ' },
+    { label: 'Diagnosis', path: '/diagnosis' },
+    { label: 'Treatment Plan Template', path: '/treatment-plan-template' },
     // Add more buttons if needed
   ];
 
@@ -26,14 +30,14 @@ const Master = () => {
     <div>
         <h1 className="text-4xl lg:w-full lg:max-w-[940px] mb-8">
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-[#E53E13] to-[#17469E]">
-            Masters
+            Consultation Setup
             </span>
         </h1>
     </div>
 </div>
       {/* Button Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {buttonData.map((button, index) => (
+        {consultationSetupbuttonData.map((button, index) => (
           <Link
             key={index}
             to={button.path}
@@ -48,5 +52,5 @@ const Master = () => {
   );
 };
 
-export default Master;
+export default ConsultationSetup;
 
