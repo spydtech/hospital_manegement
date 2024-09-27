@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiPlus, FiEdit, FiTrash } from 'react-icons/fi';
 
-const PatientAppointmentPage = () => {
+const PatientApointment = () => {
   const [patients, setPatients] = useState([]);
   const [formData, setFormData] = useState({
     date: "",
@@ -248,4 +248,4 @@ const PatientAppointmentPage = () => {
   );
 };
 
-export default PatientAppointmentPage;
+export default PatientApointment;

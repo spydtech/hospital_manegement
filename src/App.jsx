@@ -15,6 +15,11 @@ import MedicalDapartment from "./components/admin/master/medicalDapartment/Medic
 import ConsultationSetup from "./components/admin/consultationSetup/ConsultationSetup";
 import Consultation from "./components/admin/consultation/Consultation";
 import FacilityManagement from "./components/admin/facility_Management/FacilityManagement";
+import PatientApointment from "./components/admin/consultation/patientAppointment/PatientApointment";
+import HealthCareServiceUnit from "./components/admin/facility_Management/healthCareServiceUnit/HealthCareServiceUnit";
+import AppointmentType from "./components/admin/consultationSetup/appointmentType/AppointmentType"
+import NewAppointmentType from "./components/admin/consultationSetup/appointmentType/NewAppointmentType"
+import EditAppointmentType from "./components/admin/consultationSetup/appointmentType/EditAppointmentType"
 function App() {
   return (
     <Router>
@@ -38,8 +43,18 @@ function App() {
 
 
         <Route path="/consultation-setup" element={<ConsultationSetup />} />
+        <Route path="/appointment-type" element={<AppointmentType />} />
+        <Route path="/new-appointment-type" element={<NewAppointmentType />} />
+        <Route path="/edit-appointment-type/:id" element={<EditAppointmentType />} />
+
+
         <Route path="/consultation" element={<Consultation />} />
+        <Route path="/patient-appointment" element={<PatientApointment />} />
+
+
+
         <Route path="/facility-management" element={<FacilityManagement />} />
+        <Route path="/healthcare-service-unit-type" element={<HealthCareServiceUnit />} />
       
 
 
