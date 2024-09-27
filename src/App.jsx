@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/home/Home";
-import Login from "./components/pages/Login/login";
+import Login from "./components/pages/login/Login";
 import SignUp from "./components/pages/signUp/signUp";
 import BookAppointment from "./components/BookAppointment"
 import ReportsMasters from "./components/admin/reports&Masters/ReportsMasters";
@@ -13,7 +13,7 @@ import EditPractitionerSchedule from "./components/admin/master/healthcarePracti
 import Practitioner from "./components/admin/master/practitionerSchedule/Practitioner"
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -29,8 +29,8 @@ function App() {
 
 
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default App;

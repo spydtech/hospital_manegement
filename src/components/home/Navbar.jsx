@@ -1,15 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/home/logo.jpg";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    const loggedInStatus = localStorage.getItem("isLoggedIn");
+    const storedName = localStorage.getItem("userName");
+
+    if (loggedInStatus === "true" && storedName) {
+      setIsLoggedIn(true);
+      setUserName(storedName);
+    }
+  }, []);
 
   return (
     <nav className="bg-gradient-to-r from-[#17469e] to-[#e53e13] text-white">
-      <div className=" px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-around h-16 items-center">
           <div className="float-end">
-            <img src={logo} className="h-12 w-12 rounded-full" />
+            <img src={logo} className="h-12 w-12 rounded-full" alt="Logo" />
           </div>
           <div className="flex items-center">
             <div className="hidden md:block">
@@ -39,7 +52,7 @@ const Navbar = () => {
                   Doctors
                 </Link>
                 <Link
-                  to="/services"
+                  to="/reportsmasters"
                   className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Services
@@ -54,12 +67,18 @@ const Navbar = () => {
             </div>
           </div>
           <div className="float-end">
-            <Link to = "/sing_up">
-            
-            <button className="bg-white  text-blue-700 font-semibold py-2 px-6 rounded-md">
-              Sign up
-            </button>
-            </Link>
+            {/* Conditionally render the login button or user's initial */}
+            {!isLoggedIn ? (
+              <Link to="/login">
+                <button className="bg-white text-blue-700 font-semibold py-2 px-6 rounded-md">
+                  Login
+                </button>
+              </Link>
+            ) : (
+              <div className="bg-white text-blue-700 font-semibold py-2 px-6 rounded-full">
+                {userName.charAt(0).toUpperCase()}
+              </div>
+            )}
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
@@ -78,7 +97,9 @@ const Navbar = () => {
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d={
-                    isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+                    isOpen
+                      ? "M6 18L18 6M6 6l12 12"
+                      : "M4 6h16M4 12h16M4 18h16"
                   }
                 />
               </svg>
