@@ -6,7 +6,7 @@ import { TiDocumentText } from "react-icons/ti";
 import { Link } from "react-router-dom";
 const LocalSpecialists = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-around bg-white py-12 ">
+    <div className="flex flex-col lg:flex-row items-center justify-around bg-white py-12 pb-24">
       {/* Left Section: Text Content */}
       <div className="max-w-xl p-4  lg:mr-8 ">
         <h1 className="text-5xl font-bold text-[#17469e] mb-4">
@@ -40,7 +40,7 @@ const LocalSpecialists = () => {
       </div>
 
       {/* Right Section: Image and Info Bubbles */}
-      <div className="relative flex  items-center justify-center lg:mr-20 mt-12 lg:mt-0">
+      <div className="relative flex  items-center justify-center lg:mr-20 mt-24 lg:mt-16 ">
         {/* Circular Background */}
         <div className="w-96 h-96 rounded-full bg-[#17469e] m-2 flex items-center justify-center">
           <div className="p-4 bg-white  rounded-full">
@@ -56,7 +56,7 @@ const LocalSpecialists = () => {
         </div>
 
         {/* Top Bubble: Qualified Doctors */}
-        <div className="absolute top-0 left-[-100px] bg-white shadow-lg rounded-2xl p-4 flex items-center space-x-2">
+        <div className="absolute top-8 left-[-100px] bg-white shadow-lg rounded-2xl p-4 flex items-center space-x-2">
           <div className="bg-red-500 text-white p-2 rounded-full">
             <FaSearch />
           </div>
@@ -95,7 +95,7 @@ const LocalSpecialists = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

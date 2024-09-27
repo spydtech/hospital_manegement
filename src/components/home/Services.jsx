@@ -82,7 +82,7 @@ const Services = () => {
               <span className="text-lg font-bold bg-gradient-to-r from-[#17469e] to-[#e53e13] text-transparent bg-clip-text ">
                 {service.title}
               </span>
-              <p className="text-lg pt-4">{service.description}</p>
+              <p className=" pt-4">{service.description}</p>
             </div>
           </div>
         ))}

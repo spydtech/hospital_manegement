@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap');
+tiro-tamil-regular {
+    font-family: "Tiro Tamil", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tiro-tamil-regular-italic {
+    font-family: "Tiro Tamil", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  

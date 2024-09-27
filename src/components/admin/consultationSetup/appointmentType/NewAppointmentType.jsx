@@ -219,15 +219,15 @@ const NewAppointmentType = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center w-auto items-center bg-black bg-opacity-20">
+    <div className="min-h-screen flex flex-col justify-center w-auto items-center bg-black bg-opacity-50">
       <div className='bg-white w-[800px]'>
         <div className='max-w-[820px]  pt-4 flex justify-between items-center'>
-          <h2 className="text-[#17469E] flex font-medium gap-4 text-3xl mb-8">
+          <h2 className="text-[#17469E] flex font-medium gap-4 text-xl mb-8 ml-4">
             <span className="pt-1"><RiUserReceivedFill /></span>New Appointment Type
           </h2>
           <button 
             onClick={handleClose}
-            className="bg-[#17469E] font-semibold text-white text-4xl mr-8 mb-4"
+            className="bg-[#17469E] font-semibold text-white text-2xl mr-8 mb-4"
           >
             <IoCloseSharp />
           </button>
