@@ -43,9 +43,12 @@ const Signup = () => {
         ></div>
         <div className="w-full lg:w-1/2 lg:pl-10  flex flex-col justify-center relative">
           <div className="flex justify-end m-2 mr-4">
+            <Link to = "/login">
+            
             <button className="bg-[#E53E13] text-md py-3 text-white px-6  rounded-sm">
               Login
             </button>
+            </Link>
           </div>
 
           <h1 className="text-4xl text-[#17469E] font-medium ml-5">Sign up</h1>
@@ -143,12 +146,15 @@ const Signup = () => {
             </div>
 
             <div className="mt-6">
+              <Link to = "/sing_up">
+              
               <button
                 type="submit"
                 className="bg-[#17469E] text-white w-full md:w-[90%] py-3 rounded-sm"
               >
                 Sign Up
               </button>
+              </Link>
             </div>
             <div className="flex items-center justify-around">
               <label className="flex items-center">

@@ -148,9 +148,12 @@ const Login = () => {
         ></div>
         <div className="w-full lg:w-1/2 lg:pl-10 p-4 flex flex-col justify-center relative">
           <div className="flex justify-end m-2">
-            <button className="bg-[#E53E13] h-[35px] text-white w-[120px] rounded-lg">
+            <Link to = "/sing_up">
+            
+            <button className="bg-[#E53E13] text-md py-3 text-white px-6  rounded-sm">
               Signup
             </button>
+            </Link>
           </div>
           <h2 className="text-3xl font-bold text-[#17469e] mb-4">Login now</h2>
 
