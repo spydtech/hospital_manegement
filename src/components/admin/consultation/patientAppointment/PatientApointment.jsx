@@ -249,7 +249,7 @@
 // };
 
 // export default PatientApointment;
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiPlus, FiEdit } from 'react-icons/fi';
 
 const PatientAppointment = () => {
@@ -364,104 +364,104 @@ const PatientAppointment = () => {
 
             {/* Patient Form */}
             <div className="bg-[#17469E] w-[820px] p-8">
-            <form className="space-y-4 " onSubmit={handleSubmit}>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="date" className="block text-sm font-medium text-white">Date</label>
-                  <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    value={formData.date}
-                    onChange={handleChange}
-                    className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
-                    required
-                  />
+              <form className="space-y-4 " onSubmit={handleSubmit}>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="date" className="block text-sm font-medium text-white">Date</label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      value={formData.date}
+                      onChange={handleChange}
+                      className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-white">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="serius" className="block text-sm font-medium text-white">Series</label>
+                    <input
+                      type="text"
+                      id="serius"
+                      name="serius"
+                      value={formData.serius}
+                      onChange={handleChange}
+                      className="mt-1 block w-full border focus:outline-none border-border rounded-md p-2"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="appointmenttype" className="block text-sm font-medium text-white">Appointment Type</label>
+                    <input
+                      type="text"
+                      id="appointmenttype"
+                      name="appointmenttype"
+                      value={formData.appointmenttype}
+                      onChange={handleChange}
+                      className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
+                      required
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-white">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="serius" className="block text-sm font-medium text-white">Series</label>
-                  <input
-                    type="text"
-                    id="serius"
-                    name="serius"
-                    value={formData.serius}
-                    onChange={handleChange}
-                    className="mt-1 block w-full border focus:outline-none border-border rounded-md p-2"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="appointmenttype" className="block text-sm font-medium text-white">Appointment Type</label>
-                  <input
-                    type="text"
-                    id="appointmenttype"
-                    name="appointmenttype"
-                    value={formData.appointmenttype}
-                    onChange={handleChange}
-                    className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
-                    required
-                  />
-                </div>
-              </div>
 
-              <div className="grid grid-cols-1 gap-4">
-                <div>
-                  <label htmlFor="duration" className="block text-sm font-medium text-white">Duration</label>
-                  <input
-                    type="text"
-                    id="duration"
-                    name="duration"
-                    value={formData.duration}
-                    onChange={handleChange}
-                    className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
-                    required
-                  />
+                <div className="grid grid-cols-1 gap-4">
+                  <div>
+                    <label htmlFor="duration" className="block text-sm font-medium text-white">Duration</label>
+                    <input
+                      type="text"
+                      id="duration"
+                      name="duration"
+                      value={formData.duration}
+                      onChange={handleChange}
+                      className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="modeofpayment" className="block text-sm font-medium text-white">Mode Of Payment</label>
+                    <input
+                      type="text"
+                      id="modeofpayment"
+                      name="modeofpayment"
+                      value={formData.modeofpayment}
+                      onChange={handleChange}
+                      className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="paidamount" className="block text-sm font-medium text-white">Paid Amount</label>
+                    <input
+                      type="text"
+                      id="paidamount"
+                      name="paidamount"
+                      value={formData.paidamount}
+                      onChange={handleChange}
+                      className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
+                      required
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="modeofpayment" className="block text-sm font-medium text-white">Mode Of Payment</label>
-                  <input
-                    type="text"
-                    id="modeofpayment"
-                    name="modeofpayment"
-                    value={formData.modeofpayment}
-                    onChange={handleChange}
-                    className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="paidamount" className="block text-sm font-medium text-white">Paid Amount</label>
-                  <input
-                    type="text"
-                    id="paidamount"
-                    name="paidamount"
-                    value={formData.paidamount}
-                    onChange={handleChange}
-                    className="mt-1 block w-full focus:outline-none border border-border rounded-md p-2"
-                    required
-                  />
-                </div>
-              </div>
 
-              <div className="flex justify-center mt-6">
-                <button type="submit" className="bg-white text-[#17469E] px-4 py-2 rounded-md">Save</button>
-              </div>
-            </form>
-              </div>
+                <div className="flex justify-center mt-6">
+                  <button type="submit" className="bg-white text-[#17469E] px-4 py-2 rounded-md">Save</button>
+                </div>
+              </form>
+            </div>
 
-          
+
           </div>
         </div>
       )}

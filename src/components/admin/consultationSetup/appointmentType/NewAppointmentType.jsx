@@ -172,7 +172,7 @@
 // };
 
 // export default NewAppointmentType;
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { RiUserReceivedFill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
@@ -225,9 +225,9 @@ const NewAppointmentType = () => {
           <h2 className="text-[#17469E] flex font-medium gap-4 text-xl mb-8 ml-4">
             <span className="pt-1"><RiUserReceivedFill /></span>New Appointment Type
           </h2>
-          <button 
+          <button
             onClick={handleClose}
-            className= "text-[#17469E]   text-2xl mr-8 mb-4 font-extrabold"
+            className="text-[#17469E]   text-2xl mr-8 mb-4 font-extrabold"
           >
             <IoCloseSharp />
           </button>

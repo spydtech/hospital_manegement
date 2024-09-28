@@ -195,6 +195,7 @@ import { IoAdd } from "react-icons/io5";
 import { TbEdit } from "react-icons/tb";
 import { BsPersonFillAdd } from "react-icons/bs";
 
+
 const HealthCareServiceUnit = () => {
   const initialData = [
     { id: 1, unitType: "General Health", status: "Enabled" },
@@ -316,16 +317,16 @@ const HealthCareServiceUnit = () => {
 
       {addHealth && (
         <div className="inset-0 flex flex-col  justify-center items-center bg-black bg-opacity-50 absolute">
-       
 
-         <div className=" bg-white flex items-center justify-center h-[60px] pt-4  w-1/2 text-left mt-5 gap-x-3 text-[#17469E] font-serif text-[24px]">
-           <div>
-           <BsPersonFillAdd className="text-[#17469E]" />
-            </div> 
-         
-         <div>
-         {editHealth ? "Edit HealthCare Service Unit Type" : "New HealthCare Service Unit Type"}
-         </div>
+
+          <div className=" bg-white flex items-center justify-center h-[60px] pt-4  w-1/2 text-left mt-5 gap-x-3 text-[#17469E] font-serif text-[24px]">
+            <div>
+              <BsPersonFillAdd className="text-[#17469E]" />
+            </div>
+
+            <div>
+              {editHealth ? "Edit HealthCare Service Unit Type" : "New HealthCare Service Unit Type"}
+            </div>
           </div>
           <div className="bg-[#17469E] mb-20 w-1/2 mx-auto h-full  rounded-md">
             <div className="p-[70px]">
@@ -371,7 +372,7 @@ const HealthCareServiceUnit = () => {
               </div>
             </div>
           </div>
-       
+
         </div>
       )}
     </div>

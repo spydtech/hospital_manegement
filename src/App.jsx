@@ -10,7 +10,14 @@ import HealthcarePractitioner from "./components/admin/master/healthcarePractiti
 import NewPractitionerSchedule from "./components/admin/master/healthcarePractitioner/NewPractitionerSchedule"
 import EditPractitionerSchedule from "./components/admin/master/healthcarePractitioner/EditPractitionerSchedule"
 import Practitioner from "./components/admin/master/practitionerSchedule/PractitionerSchedule";
-
+import Consultation from "./components/admin/consultation/Consultation";
+import PatientAppointment from "./components/admin/consultation/patientAppointment/PatientApointment";
+import ConsultationSetup from "./components/admin/consultationSetup/ConsultationSetup";
+import AppointmentType from "./components/admin/consultationSetup/appointmentType/AppointmentType";
+import NewAppointmentType from "./components/admin/consultationSetup/appointmentType/NewAppointmentType";
+import EditAppointmentType from "./components/admin/consultationSetup/appointmentType/EditAppointmentType";
+import FacilityManagement from "./components/admin/facility_Management/FacilityManagement";
+import HealthCareServiceUnit from "./components/admin/facility_Management/healthCareServiceUnit/HealthCareServiceUnit";
 function App() {
   return (
     <BrowserRouter>
@@ -26,8 +33,14 @@ function App() {
         <Route path="/newpractitioner-schedule" element={<NewPractitionerSchedule />} />
         <Route path="/editPractitioner-schedule" element={<EditPractitionerSchedule />} />
         <Route path="/practitioner-schedule" element={<Practitioner />} />
-
-
+        <Route path="/consultation" element={<Consultation />} />
+        <Route path="/patient-appointment" element={<PatientAppointment />} />
+        <Route path="/consultation-setup" element={<ConsultationSetup />} />
+        <Route path="/appointment-type" element={<AppointmentType />} />
+        <Route path="/new-appointment-type" element={<NewAppointmentType />} />
+        <Route path="/edit-appointment-type/${index}" element={<EditAppointmentType />} />
+        <Route path="/facility-management" element={<FacilityManagement />} />
+        <Route path="/healthcare-service-unit-type" element={<HealthCareServiceUnit />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FiEdit, FiPlus } from 'react-icons/fi';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -32,21 +32,21 @@ const AppointmentType = () => {
   return (
     <div className="min-h-screen p-8 bg-gray-100">
       <div className=" ">
-      <div className=" flex justify-start ml-14 w-full">
-        <input
-          type="text"
-          placeholder="Search here..."
-          value={searchTerm}
-          onChange={handleSearch}
-          className="p-3 border  w-[650px]  border-gray-300 rounded-lg"
-        />
+        <div className=" flex justify-start ml-14 w-full">
+          <input
+            type="text"
+            placeholder="Search here..."
+            value={searchTerm}
+            onChange={handleSearch}
+            className="p-3 border  w-[650px]  border-gray-300 rounded-lg"
+          />
         </div>
         <div className="flex justify-end p-2 mb-6">
-        <button className="bg-[#17469E] text-white flex items-center px-6 py-3 rounded-lg hover:bg-[#153c80] transition">
-          <FiPlus className="mr-2" />
-          <Link to="/new-appointment-type">Appointment Type</Link>
-        </button>
-      </div>
+          <button className="bg-[#17469E] text-white flex items-center px-6 py-3 rounded-lg hover:bg-[#153c80] transition">
+            <FiPlus className="mr-2" />
+            <Link to="/new-appointment-type">Appointment Type</Link>
+          </button>
+        </div>
       </div>
 
       <table className="mt-6 w-full border-collapse text-center">
