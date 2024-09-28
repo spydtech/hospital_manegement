@@ -4,6 +4,7 @@ import Login from "./components/pages/login/Login";
 import SignUp from "./components/pages/signUp/SignUp";
 import BookAppointment from "./components/BookAppointment"
 import ReportsMasters from "./components/admin/reports&Masters/ReportsMasters";
+import MedicalDapartment from "./components/admin/master/medicalDapartment/MedicalDapartment"
 import Master from "./components/admin/master/Master";
 import Patient from "./components/admin/master/patient/Patient";
 import HealthcarePractitioner from "./components/admin/master/healthcarePractitioner/HealthcarePractitioner"
@@ -28,6 +29,7 @@ function App() {
         <Route path="/bookappointment" element={<BookAppointment />} />
         <Route path="/reportsmasters" element={<ReportsMasters />} />
         <Route path="/masters" element={<Master />} />
+        <Route path="/medical-department" element={<MedicalDapartment />} />
         <Route path="/patient" element={<Patient />} />
         <Route path="/HealthcarePractitioner" element={<HealthcarePractitioner />} />
         <Route path="/newpractitioner-schedule" element={<NewPractitionerSchedule />} />
