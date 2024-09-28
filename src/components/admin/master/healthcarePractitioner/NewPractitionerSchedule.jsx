@@ -170,7 +170,7 @@ const NewPractitionerSchedule = () => {
     localStorage.setItem('practitionerSchedules', JSON.stringify(storedData));
 
     alert('Data saved successfully!');
-    navigate('/HealthcarePractitioner');
+    navigate('/healthcare-practitioner');
   };
 
   return (

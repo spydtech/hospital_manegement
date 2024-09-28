@@ -58,9 +58,8 @@ const ReportsMasters = () => {
     <>
       <Navbar />
       <div className="max-h-[768px] flex flex-col items-center p-6 justify-center bg-gray-100">
-        {/* Heading with Linear Gradient */}
-
-        <h1 className="text-4xl w-full max-w-[1220px] pb-8  ">
+      
+        <h1 className="text-4xl w-full max-w-[1220px] pb-8 text-center ">
           <span className="font-bold  py-2 bg-clip-text text-transparent bg-gradient-to-r from-[#E53E13] to-[#17469E]">Reports & Masters</span>
         </h1>
 

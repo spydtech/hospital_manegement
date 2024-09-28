@@ -158,7 +158,7 @@ const EditPractitionerSchedule = () => {
     localStorage.setItem('practitionerSchedules', JSON.stringify(storedData));
 
     alert('Data updated successfully!');
-    navigate('/HealthcarePractitioner');
+    navigate('/healthcare-practitioner');
   };
 
   return (
