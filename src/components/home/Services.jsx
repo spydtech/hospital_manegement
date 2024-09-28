@@ -1,5 +1,5 @@
 import React from "react";
-import neurology from "../../assets/home/improveYourHealth/Neurology.jpg";
+import neurology from "../../assets/home/improveYourHealth/neurology.jpg";
 import ophthalmology from "../../assets/home/improveYourHealth/opthamology.jpg";
 import orthopedics from "../../assets/home/improveYourHealth/orthopedics.jpg";
 import cardiology from "../../assets/home/improveYourHealth/cardiology.jpg";
