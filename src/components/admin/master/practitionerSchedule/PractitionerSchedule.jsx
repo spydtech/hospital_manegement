@@ -453,7 +453,7 @@
 // //     return (
 // //         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
 // //             <div className="bg-white p-10 rounded-lg w-[800px] h-full flex flex-col">
-                
+
 // //                 <button
 // //                     onClick={onClose}
 // //                     className="absolute top-4 right-4 text-5xl text-gray-700"
@@ -665,7 +665,7 @@
 //     return (
 //         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
 //             <div className="bg-white p-10 rounded-lg w-full h-full flex flex-col relative">
-                
+
 //                 <button
 //                     onClick={onClose}
 //                     className="absolute top-4 right-4 text-2xl text-gray-700"
@@ -827,7 +827,7 @@ const Modal = ({ isOpen, onClose, onSave, schedule }) => {
     );
 };
 
-const PractitionerSchedule = () => {
+const Practitioner = () => {
     const [scheduleData, setScheduleData] = useState(initialScheduleData);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentSchedule, setCurrentSchedule] = useState(null);
@@ -839,9 +839,7 @@ const PractitionerSchedule = () => {
         setIsModalOpen(true);
     };
 
-    const handleDelete = (id) => {
-        setScheduleData(scheduleData.filter(schedule => schedule.id !== id));
-    };
+
 
     const handleSave = (day, fromDate, toDate, status) => {
         if (currentSchedule) {
@@ -860,19 +858,19 @@ const PractitionerSchedule = () => {
     };
 
     // Filtered data based on search term
-    const filteredData = scheduleData.filter(schedule => 
+    const filteredData = scheduleData.filter(schedule =>
         schedule.day.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     return (
         <div className="p-5">
             <div>
-                <input 
-                    type="search" 
+                <input
+                    type="search"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-[800px] h-[40px] rounded-lg pl-2" 
-                    style={{ borderColor: '#17469E', borderWidth: '1px', borderStyle: 'solid' }} 
+                    className="w-[800px] h-[40px] rounded-lg pl-2"
+                    style={{ borderColor: '#17469E', borderWidth: '1px', borderStyle: 'solid' }}
                     placeholder="Search by day"
                 />
             </div>
@@ -909,9 +907,8 @@ const PractitionerSchedule = () => {
                             <td className="border border-gray-300 p-2">{schedule.toDate}</td>
                             <td className="border border-gray-300 p-2">
                                 <span
-                                    className={`${
-                                        schedule.status === 'Active' ? 'text-green-600' : 'text-red-600'
-                                    } font-semibold`}
+                                    className={`${schedule.status === 'Active' ? 'text-green-600' : 'text-red-600'
+                                        } font-semibold`}
                                 >
                                     {schedule.status}
                                 </span>
@@ -935,20 +932,20 @@ const PractitionerSchedule = () => {
                 </tbody>
             </table>
 
-            <Modal 
-                isOpen={isModalOpen} 
+            <Modal
+                isOpen={isModalOpen}
                 onClose={() => {
                     setIsModalOpen(false);
                     setCurrentSchedule(null);
-                }} 
-                onSave={handleSave} 
-                schedule={currentSchedule} 
-               
+                }}
+                onSave={handleSave}
+                schedule={currentSchedule}
+
             />
         </div>
     );
 };
 
 // Correct default export
-export default PractitionerSchedule;
+export default Practitioner;
 

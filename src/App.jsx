@@ -9,8 +9,8 @@ import Patient from "./components/admin/master/patient/Patient";
 import HealthcarePractitioner from "./components/admin/master/healthcarePractitioner/HealthcarePractitioner"
 import NewPractitionerSchedule from "./components/admin/master/healthcarePractitioner/NewPractitionerSchedule"
 import EditPractitionerSchedule from "./components/admin/master/healthcarePractitioner/EditPractitionerSchedule"
-// import "./App.css";
-import Practitioner from "./components/admin/master/practitionerSchedule/Practitioner"
+import Practitioner from "./components/admin/master/practitionerSchedule/PractitionerSchedule";
+
 function App() {
   return (
     <BrowserRouter>
